@@ -1,0 +1,68 @@
+1. Install python 
+	Windows / MacOS - https://www.python.org/downloads/
+
+ To run this project we can do this in 2 ways
+
+
+Method - 1 
+
+	1. python main.py
+
+
+Method - 2
+
+	1. pip install -r requirements.txt
+	2. python waterBotteles.py
+	3. python chestxrays.py
+	4. python flowers.py
+	5. python mnist_vgg16_resnet50.py
+	6. python mnist_inceptionresnetv2.py
+	7. python mnist_xception.py
+	8. python mnistManual.py
+
+
+
+
+main.py
+
+	— In this file we are we are installing all the required packages through subprocess library.
+	— Also we are executing 4 dataset files, one after another
+
+chestxrays.py
+	
+	— Dataset Link - https://www.kaggle.com/datasets/tolgadincer/labeled-chest-xray-images
+	—  Initially we are downloading dataset from the drive link and saving it local stroage -  https://drive.google.com/u/0/uc?id=1TvNW_EAKekz9UAUkT9MT_Z6kFMVrb9-H&export=download
+	— Creating Working directory to save output - outputs/chestxraysDataset /
+	— Executing different various optimizers over different architectures.
+
+
+flowers.py
+
+	— Dataset Link - https://www.kaggle.com/datasets/alxmamaev/flowers-recognition
+	— Initially we are downloading the dataset from drive link and saving it locally - https://drive.google.com/uc?id=1Gb-_LbLxBJyrblL5wDE1k_HTX5Y6ubTw
+	— creating working directory to save outputs - outputs/floweDataset/
+	—  Executing different various optimizers over different architectures.
+
+waterBotteles.py
+
+	— Dataset Link - https://www.kaggle.com/datasets/chethuhn/water-bottle-dataset
+	— Initially we are downloading the dataset from drive link and saving it locally - https://drive.google.com/uc?id=1_xadMaT0gBeDpJwvIDnXNkxRA1-8Mx6P
+	— creating working directory to save outputs - outputs/waterDataset/
+	— Executing different various optimizers over different architectures.
+
+
+MNIST - https://www.kaggle.com/competitions/digit-recognizer
+
+For this dataset we are having 3 files
+	“mnist_vgg16_resnet50.py”
+	“mnist_inceptionresnetv2.py”
+	“mnist_xception.py”
+
+We are downloading data-set only in the first file from drive link - https://drive.google.com/u/0/uc?id=1Y2dYLTfyQn5ua0TUmpLkmhSr-6V6y7BT&export=download
+
+
+“mnistManual.py”
+
+	— Initially we collected 56 hand-written images of different resolutions and from different devices.
+	— Loaded the saved model of all the architetcures
+	— Using those model to predict the digits.
